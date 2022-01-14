@@ -1,0 +1,6 @@
+From a shell prompt you can manually generate a hash to use with a salt by doing something like:
+
+plainsalt=hacker
+pass=chocolate
+salt=$(echo -n $plainsalt | md5sum | awk '{ print $1 }' )
+hash=$(echo -n $salt$pass | md5sum | awk '{ print $1 }')
