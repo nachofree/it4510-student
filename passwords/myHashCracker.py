@@ -12,9 +12,9 @@ def crack_MD5_Hash(hash_to_crack, salt, dictionary_file):
 
 #hash_to_crack = 'c94201dbba5cb49dc3a6876a04f15f75'
 #hash_to_crack = 'b1946ac92492d2347c6235b4d2611184'
-hash_to_crack = '3ac97803e1132e8dd0a60a263c3b25ab'
-salt = 'd6a6bc0db10694a2d90e3a69648f3a03'
-dict = "/home/cituser/SecLists/Passwords/darkweb2017-top10000.txt"
+hash_to_crack = 'a05a1d4f7f800eb9ec3a93cb23a6207b'
+salt = '8ff32489f92f33416694be8fdc2d4c22'
+dict = "/home/joe/temp/it4510-student/passwords/darkweb2017-top10000.txt"
 
 password = crack_MD5_Hash(hash_to_crack, salt, dict)
 print(password)
