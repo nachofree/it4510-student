@@ -2,7 +2,7 @@
 
 
 #change this to reflect whatever vlan you want this in
-vlan=2003
+vlan=3004
 #this will put this prefix before all your vms
 prefix=s22-it4510
 
@@ -12,7 +12,7 @@ prefix=s22-it4510
 declare -A toclone
 #this is a list of images that I want to clone when I run the command and how much ram each should be given
 
-toclone=( ["s22-linux-desktop"]="1024" ["pfsense"]="512" ["kali"]="2048" ["metasploitable"]="512" )
+toclone=( ["hs-ub-gui"]="1024" ["hs-pfsense"]="512" ["hs-kali"]="2048" ["hs-metasploit"]="512" )
 
 
 function usage(){
@@ -52,7 +52,7 @@ function turnoff() {
 function turnon() {
 	for m in "${!toclone[@]}"
 	do
-	citv bootvm $prefix-$m c
+	citv bootvm $prefix-$m c dualnic
 	done
 }
 

@@ -1,0 +1,17 @@
+#hackstudio
+
+This allows you to manage some vms on the vm farm
+
+Network diagram
+
+                  |
+                 pfsense
+                 wan: you change this ip and gateway
+                 lan: 192.168.100.1/24
+                  |
+|-----------------|-----------------------|
+|                 |                       |
+Kali              Metasploitable          Ubuntu
+192.168.100.2/24  192.168.100.3/24        192.168.100.4/24              
+
+
