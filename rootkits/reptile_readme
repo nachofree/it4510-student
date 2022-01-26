@@ -4,16 +4,20 @@ Essentially it is :
 
 #### Victim machine
 
+# Did this on my ubuntu14.04 machine
+
 sudo apt install git libreadline-dev build-essential libncurses-dev linux-headers-$(uname -r)
 git clone https://github.com/f0rb1dd3n/Reptile.git
 cd Reptile
 make menuconfig
-#accept all the default options
+#accept all the default options (Select Exit)
 make
 sudo make install
 
 
 #### Control machine
+
+# Did this on some other focal server machine
 
 Essentially the same as above, but:
 
