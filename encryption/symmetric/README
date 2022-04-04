@@ -1,0 +1,9 @@
+sudo apt install gnupg
+
+#encrypt
+
+> gpg --batch --output greetings.txt.gpg --passphrase mypassword --symmetric greetings.txt
+
+#decrypt
+
+> gpg --batch --output greetings1.txt --passphrase mypassword --decrypt greetings.txt.gpg

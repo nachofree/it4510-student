@@ -1,0 +1,7 @@
+#Key generation  and encryption
+
+openssl genrsa -aes128 -out alice_private.pem 1024
+openssl rsa -in alice_private.pem -noout -text 
+openssl rsa -in alice_private.pem -pubout > alice_public.pem
+openssl rsautl -encrypt -inkey alice_public.pem -pubin -in plaintext -out enctext
+

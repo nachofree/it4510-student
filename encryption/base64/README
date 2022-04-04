@@ -1,0 +1,5 @@
+Is this really encryption?
+
+base64 plaintext.txt
+
+base64 -d
