@@ -8,6 +8,9 @@ citv bootvm pfsense c dualnic
 
 If after booting it doesn't detect 2nics, you have done something wrong.  The initial boot screen should ask if you want to setup vlans. Select 'n'. The WAN interface (re0) should be something in your 144.38 vlan that is assigned to you. The other interface (re1) is the LAN interface.  You will eventually get to a menu where you will need to select option 2 to change the ip address of the wan interface.  Make sure that pfsense can ping out after setting the wan ip.
 
+You will also have to select the LAN interface at the menu and change the ip to 192.168.100.1/24. Don't have it use DHCP.
+
+To test if things are working correctly, you could boot the metasploitable image and make sure it can ping the 192.168.100.1 (pfsense) machine, and then see if it can ping something like 8.8.8.8.
  
 
 
