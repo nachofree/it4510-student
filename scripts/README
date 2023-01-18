@@ -4,6 +4,8 @@ This allows you to manage some vms on the vm farm
 
 After updating the file to the correct vlan (see your vm webpage), you run it like: `./hack_studio.sh`.
 
+I have a youtube video that may help you here: https://youtu.be/qdcSAdit0Jw
+
 Note, after cloning the pfsense machine, you will have to connect via vnc and set the initial ip address stuff.  Make sure you boot it with the dualnic option like:
 
         citv bootvm pfsense c dualnic
