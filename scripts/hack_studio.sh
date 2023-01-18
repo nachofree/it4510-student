@@ -59,7 +59,7 @@ function turnon() {
 #generate a possible ssh command
 function genssh() {
  echo "Maybe this ssh command will work? It takes a few seconds to run. If it says NONE, your machine isn't running"
- cmd="ssh $USER@ssh.cs.dixie.edu "
+ cmd="ssh $USER@ssh.cs.utahtech.edu "
  /qemu/bin/citv showvm | grep $prefix | 
  (
  while read -r m;
