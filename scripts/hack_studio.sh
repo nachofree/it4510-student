@@ -12,7 +12,7 @@ prefix=s23-it4510
 declare -A toclone
 #this is a list of images that I want to clone when I run the command and how much ram each should be given
 
-toclone=( ["ubuntu_2018_gui"]="1024" ["s23-hs-pfsense"]="512" ["s23-hs-kali"]="2048" ["hs-metasploit"]="512" )
+toclone=( ["s23-hs-ubuntu-gui"]="1024" ["s23-hs-pfsense"]="512" ["s23-hs-kali"]="2048" ["hs-metasploit"]="512" )
 
 
 function usage(){
