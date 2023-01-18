@@ -2,9 +2,11 @@
 
 This allows you to manage some vms on the vm farm
 
+After updating the file to the correct vlan (see your vm webpage), you run it like: `./hack_studio.sh`.
+
 Note, after cloning the pfsense machine, you will have to connect via vnc and set the initial ip address stuff.  Make sure you boot it with the dualnic option like:
 
-citv bootvm pfsense c dualnic
+        citv bootvm pfsense c dualnic
 
 If after booting it doesn't detect 2nics, you have done something wrong.  The initial boot screen should ask if you want to setup vlans. Select 'n'. The WAN interface (re0) should be something in your 144.38 vlan that is assigned to you. The other interface (re1) is the LAN interface.  You will eventually get to a menu where you will need to select option 2 to change the ip address of the wan interface.  Make sure that pfsense can ping out after setting the wan ip.
 
