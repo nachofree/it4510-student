@@ -13,7 +13,9 @@ If after booting it doesn't detect 2nics, you have done something wrong.  The in
 You will also have to select the LAN interface at the menu and change the ip to 192.168.100.1/24. Don't have it use DHCP.
 
 To test if things are working correctly, you could boot the metasploitable image and make sure it can ping the 192.168.100.1 (pfsense) machine, and then see if it can ping something like 8.8.8.8.
- 
+
+The username is: cituser
+The password is: think of our mascot 
 
 
 Network diagram
