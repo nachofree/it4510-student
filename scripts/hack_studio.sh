@@ -4,7 +4,7 @@
 #change this to reflect whatever vlan you want this in
 vlan=3004
 #this will put this prefix before all your vms
-prefix=s23-it4510
+prefix=it4510
 
 
 #probably don't change anything down here
